@@ -1,16 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import "bootstrap/dist/css/bootstrap.min.css";
-import RoomProvider from './context/RoomContext';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import RoomProvider from "./context/RoomContext";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <RoomProvider>
     <React.StrictMode>
-    <App />
-  </React.StrictMode>
+      <App />
+    </React.StrictMode>
   </RoomProvider>
-  
 );
